@@ -122,6 +122,35 @@ li{
   }
 
   .sidebar{
+  animation:slideLeft 1s ease;
+}
+
+.content{
+  animation:fadeIn 1.5s ease;
+}
+
+@keyframes slideLeft{
+  from{
+    opacity:0;
+    transform:translateX(-50px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+  }
+
+  to{
+    opacity:1;
+  }
+}
+  .sidebar{
     width:100%;
   }
 
